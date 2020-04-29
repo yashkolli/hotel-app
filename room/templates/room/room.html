@@ -1,9 +1,9 @@
 {%extends "room/base.html"%}
 {%block content %}
-    {% for link,image in zipped %}
+    {% for link,image in images %}
         <article class="media content-section">
             <div class="media-body">
-            <a href="{{ link }}"><img src="{{ image }}"></a>
+            <a href=" {{ link }} "><img src="{{ image }}"></a>
             </div>
         </article>
 
