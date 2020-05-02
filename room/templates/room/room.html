@@ -1,5 +1,6 @@
 {%extends "room/base.html"%}
 {%block content %}
+    {% if user.is_authenticated %}
     {% for link,image in images %}
         <article class="media content-section">
             <div class="media-body">
@@ -8,4 +9,8 @@
         </article>
 
     {% endfor %}
+    {% else %}
+    <h1>Please Login!!</h1>
+    {% endif %}
+
 {%endblock content%}
